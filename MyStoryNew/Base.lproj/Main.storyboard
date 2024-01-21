@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Utf-B3-duM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--The Batman-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStoryNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batman-main" translatesAutoresizingMaskIntoConstraints="NO" id="ihs-b9-yuU">
+                                <rect key="frame" x="-553.66666666666663" y="216.66666666666663" width="1500.3333333333333" height="219"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="ZR8-a0-cUV"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="hcL-ni-kH4">
+                                <rect key="frame" x="105.00000000000001" y="493" width="183.33333333333337" height="199"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz5-vI-4cd">
+                                        <rect key="frame" x="27.666666666666664" y="0.0" width="127.66666666666669" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="My Backstory">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZzD-tR-RrQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSN-8f-1DB">
+                                        <rect key="frame" x="0.0" y="82.333333333333371" width="183.33333333333334" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Who are my enemies">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exf-pC-wOF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCL-Wd-pSU">
+                                        <rect key="frame" x="7" y="164.66666666666663" width="169" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="How much can I lift">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDO-mq-NOo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ihs-b9-yuU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8eb-Rl-kpM"/>
+                            <constraint firstItem="hcL-ni-kH4" firstAttribute="top" secondItem="ihs-b9-yuU" secondAttribute="bottom" constant="57.333333333333371" id="DSU-3A-NPd"/>
+                            <constraint firstItem="hcL-ni-kH4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OfB-Xj-rbz"/>
+                            <constraint firstItem="ihs-b9-yuU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="tFO-Wp-9kt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Batman" id="0SH-d1-MQd"/>
+                    <connections>
+                        <segue destination="Grq-jw-Uci" kind="show" identifier="detailSegue" id="vb2-uv-Pey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ddC-e2-L7t">
+            <objects>
+                <viewController id="Grq-jw-Uci" customClass="DetailViewController" customModule="MyStoryNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6lK-Xt-dGK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oRu-y4-eT4">
+                                <rect key="frame" x="76.666666666666686" y="168" width="240" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="pwA-v9-gaj"/>
+                                    <constraint firstAttribute="width" constant="240" id="ugW-wg-OqW"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="2EW-9D-WoG">
+                                <rect key="frame" x="20" y="459.66666666666674" width="353" height="358.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" My Backstory" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qw-3h-P33">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="38.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="diG-BE-1ff">
+                                        <rect key="frame" x="0.0" y="59.333333333333314" width="353" height="299"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Batman's origin story features him swearing vengeance against criminals after witnessing the murder of his parents Thomas and Martha as a child, a vendetta tempered with the ideal of justice. He trains himself physically and intellectually, crafts a bat-inspired persona, and monitors the Gotham streets at night.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="358.32999999999998" id="T1t-sq-G4u"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bJJ-xm-8gI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bJJ-xm-8gI" firstAttribute="bottom" secondItem="2EW-9D-WoG" secondAttribute="bottom" id="02n-l0-Blb"/>
+                            <constraint firstItem="2EW-9D-WoG" firstAttribute="leading" secondItem="bJJ-xm-8gI" secondAttribute="leading" constant="20" id="0Ej-el-zIy"/>
+                            <constraint firstItem="oRu-y4-eT4" firstAttribute="centerY" secondItem="6lK-Xt-dGK" secondAttribute="centerY" constant="-150" id="Eaa-4i-11Q"/>
+                            <constraint firstItem="bJJ-xm-8gI" firstAttribute="trailing" secondItem="2EW-9D-WoG" secondAttribute="trailing" constant="20" id="Szr-XH-rGP"/>
+                            <constraint firstItem="oRu-y4-eT4" firstAttribute="centerX" secondItem="6lK-Xt-dGK" secondAttribute="centerX" id="V8m-x1-q0T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cro-rW-Dr7"/>
+                    <connections>
+                        <outlet property="detailDescTV" destination="diG-BE-1ff" id="jEh-b1-D6r"/>
+                        <outlet property="detailImageView" destination="oRu-y4-eT4" id="VvS-ID-YXM"/>
+                        <outlet property="detailNameLabel" destination="0qw-3h-P33" id="S1R-vM-9Jz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yr3-Ce-AeS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861.8320610687022" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zdp-CZ-6QF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Utf-B3-duM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KNj-Yh-pCH">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hDl-gR-v5t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPQ-gg-7e6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.95419847328243" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="batman-main" width="1500" height="1500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
