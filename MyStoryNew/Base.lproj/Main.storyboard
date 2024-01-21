@@ -29,7 +29,7 @@
                                         <rect key="frame" x="27.666666666666664" y="0.0" width="127.66666666666669" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="My Backstory">
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="didTapDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZzD-tR-RrQ"/>
@@ -39,7 +39,7 @@
                                         <rect key="frame" x="0.0" y="82.333333333333371" width="183.33333333333334" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Who are my enemies">
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="didTapDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exf-pC-wOF"/>
@@ -49,7 +49,7 @@
                                         <rect key="frame" x="7" y="164.66666666666663" width="169" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="How much can I lift">
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="didTapDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDO-mq-NOo"/>
